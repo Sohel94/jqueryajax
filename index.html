@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>CRUD(create,retrive,update,delete) Document</title>
+	</head>
+	<body>
+		<h1>jQuery Ajax CRUD</h1>
+
+		<h2>Use API JSONpalceholder users</h2>
+		<ul id="users"></ul>
+
+		<!-- **** Mustache JS Template Method Use -->
+
+		<template id="user-template">
+			<li data-id="{{id}}">
+				<p>
+					<strong>Name: </strong>
+					<span class="noedit name">{{name}}</span>
+					<input class="edit name" />
+				</p>
+				<p>
+					<strong>User Name: </strong>
+					<span class="noedit username">{{username}}</span>
+					<input class="edit username" />
+				</p>
+				<p>
+					<strong>Email: </strong>
+					<span class="noedit email">{{email}}</span>
+					<input class="edit email" />
+				</p>
+				<p>
+					<strong>Phone: </strong>
+					<span class="noedit phone">{{phone}}</span>
+					<input class="edit phone" />
+				</p>
+				<p>
+					<strong>Website: </strong>
+					<span class="noedit website">{{website}}</span>
+					<input class="edit website" />
+				</p>
+				<button data-id="{{id}}" class="remove">X</button>
+				<button class="editUser noedit">Edit</button>
+				<button class="saveEdit edit">Save</button>
+				<button class="cancelEdit edit">Cancel</button>
+			</li>
+		</template>
+
+        
+		<h4>Add a Coffee Order</h4>
+		<p>Name: <input type="text" id="name" /></p>
+		<p>User Name: <input type="text" id="username" /></p>
+		<p>Email: <input type="text" id="email" /></p>
+		<p>Phone: <input type="text" id="phone" /></p>
+		<p>Website: <input type="text" id="website" /></p>
+
+		<button id="add-order">Add</button>
+
+		<script src="jquery.js"></script>
+	</body>
+</html>
