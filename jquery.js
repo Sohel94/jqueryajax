@@ -133,3 +133,20 @@ $(function(){
     });
 
 })
+
+// ******INput Search Query ****
+// $('#choose-city li').each(function(){
+//     $(this).children().text();
+// });
+// $('#txtSearchCity').keyup(function(){
+//   var city = $(this).val();
+//   var city_list = $('#choose-city li');
+//   if (city.length>0){
+//   city_list.hide();
+//   city_list.each(function(){
+//   if($(this).children().text().indexOf(city) !="-1")){
+//   $(this).show();
+// }
+//   })
+//   }
+// })
